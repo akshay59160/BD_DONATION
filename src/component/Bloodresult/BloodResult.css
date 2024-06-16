@@ -1,0 +1,52 @@
+/* .instructiontable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 1000px;
+    color: white;
+    text-align: center;
+    font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+
+    
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #5B5B5B  ;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: white;}
+  
+  #customers tr:hover {background-color: white;} 
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:#1E1E1E;
+    color: white;
+  }
+  #customers tr{
+    background-color: #DFDBE3;
+    color: black;
+  }
+
+  @media only screen and (max-width: 600px){
+    
+    #customers{
+        width: 100%;
+    }
+  } */
+
+
+

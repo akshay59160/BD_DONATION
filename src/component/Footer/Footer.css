@@ -1,0 +1,125 @@
+ .foot {
+  height: 180px;
+      background-color: #006573 ;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   align-items: center;
+ }
+     .imagefoot {
+   height: 180px;
+     }
+     .imglogo {
+       height: 60px;
+       width: 280px;
+     }
+     .vr {
+       height: 150px;
+    
+       width: 3px;
+       border-left: 3px solid white;
+     }
+     .link1 {
+       height: 130px;
+      width: 130px;
+       background-color: gray;
+     }
+     .link2 {
+       height: 130px;
+       width: 130px;
+       background-color: gray;
+       margin-right: 60px;
+     }
+    
+     @media (max-width: 768px) {
+       .foot {
+         height: 140px;
+       }
+       .link1 {
+         height: 100px;
+         width: 100px;
+       }
+       .imagefoot {
+         height: 140px;
+      }
+       .vr {
+         height: 120px;
+       }
+       .imglogo {
+         width: 260px;
+       }
+       .link2 {
+         height: 100px;
+         width: 100px;
+       }
+     }
+     @media (max-width: 640px) {
+       .foot {
+         height: 100px;
+       }
+       .link1 {
+         height: 70px;
+         width: 70px;
+       }
+       .imagefoot {
+         height: 100px;
+       }
+       .vr {
+         height: 80px;
+       }
+       .imglogo {
+         width: 200px;
+         height: 50px;
+       }
+      .link2 {
+         height: 70px;
+         width: 70px;
+       }
+     }
+     @media (max-width: 475px) {
+       .foot {
+         height: 70px;
+       }
+       .link1 {
+         height: 55px;
+         width: 55px;
+       }
+       .imagefoot {
+         height: 70px;
+       }
+       .vr {
+         height: 55px;
+       }
+       .imglogo {
+        width: 160px;
+        height: 40px;
+       }
+      .link2 {
+         height: 55px;
+       width: 55px;
+      }
+     }
+    
+     @media (max-width: 414px) {
+       .foot {
+         height: 60px;
+       }
+       .link1 {
+         height: 45px;
+         width: 45px;
+      }
+       .imagefoot {
+         height: 60px;
+       }
+       .vr {
+         height: 45px;
+      }
+      .imglogo {
+         width: 140px;
+         height: 35px;
+       }
+       .link2 {
+         height: 45px;
+         width: 45px;
+       }
+     }
