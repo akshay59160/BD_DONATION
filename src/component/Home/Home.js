@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 import "./Home.css";
 import {
   Card,
@@ -12,12 +11,12 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-import bag1 from "../Blood/assetss/Component10.svg"
-import bag2 from "../Blood/assetss/Component11.svg"
-import bag3 from "../Blood/assetss/Component12.svg"
-import baginfo from "../Blood/assetss/Groupinfo.svg"
-import bagreg from "../Blood/assetss/reg.svg"
-import bagdon from "../Blood/assetss/donation.svg"
+import bag1 from "../Blood/assetss/Component10.svg";
+import bag2 from "../Blood/assetss/Component11.svg";
+import bag3 from "../Blood/assetss/Component12.svg";
+import baginfo from "../Blood/assetss/Groupinfo.svg";
+import bagreg from "../Blood/assetss/reg.svg";
+import bagdon from "../Blood/assetss/donation.svg";
 
 const Home = () => {
   return (
@@ -72,7 +71,7 @@ const Home = () => {
             </CardBody>
             <CardFooter>
               <Link to={"/Blood"}>
-                <Button colorScheme="red" >Get Blood</Button>
+                <Button colorScheme="red">Get Blood</Button>
               </Link>
             </CardFooter>
           </Card>
