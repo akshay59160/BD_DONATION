@@ -1,6 +1,6 @@
 import "./Footer.css";
-import imgg from "../Blood/assetss/medical.svg"
-import img from "../Blood/assetss/bnation.png"
+import imgg from "../Blood/assetss/medical.svg";
+import img from "../Blood/assetss/bnation.png";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -23,5 +23,3 @@ export default function Footer() {
     </>
   );
 }
-
-

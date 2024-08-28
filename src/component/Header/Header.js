@@ -15,8 +15,14 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Header.css";
-import img from "../Blood/assetss/bnation.png"
+import img from "../Blood/assetss/bnation.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 function Header() {
   const navRef = useRef();
@@ -29,7 +35,7 @@ function Header() {
     <header>
       <nav className="nav" ref={navRef}>
         <Link onClick={showNavbar} to="/" className="site-title">
-          <img src={img} className="logo_image" />
+          <img src={img} className="logo_image" alt="logo_image" />
         </Link>
         <ul className="links-ul">
           <CustomLink onClick={showNavbar} to="/">
@@ -38,11 +44,7 @@ function Header() {
           <CustomLink onClick={showNavbar} to="/Registration">
             DONATE
           </CustomLink>
-          <CustomLink
-            className="get_blood"
-            onClick={showNavbar}
-            to="/Blood"
-          >
+          <CustomLink className="get_blood" onClick={showNavbar} to="/Blood">
             GET BLOOD
           </CustomLink>
           <CustomLink onClick={showNavbar} to="/CampRegistrations">
@@ -52,13 +54,17 @@ function Header() {
             ABOUT
           </CustomLink>
         </ul>
-        <li className="login-ul">
-          <CustomLink onClick={showNavbar} to="/signup">
-            <button className=" but reg">Sign up</button>
-          </CustomLink>
-          <CustomLink onClick={showNavbar} to="/login" className="login">
-            <button className=" but log">Login</button>
-          </CustomLink>
+        <li className="login-ul ">
+          <button onClick={showNavbar} className="btn-sign">
+            <SignedOut>
+              <SignInButton className="signinBtn" />
+            </SignedOut>
+          </button>
+          <div onClick={showNavbar} className="login-in">
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
 
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
@@ -67,7 +73,6 @@ function Header() {
       </nav>
       <nav>
         <div className="logo_image_mob_div">
-        
           <Link to="/" className="site-title">
             <img src={img} className="logo_image_mob" />
           </Link>

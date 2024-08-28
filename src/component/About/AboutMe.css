@@ -1,0 +1,74 @@
+/* Container */
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  /* Content Wrapper */
+  .about-me-content {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .about-me-content {
+      flex-direction: row;
+    }
+  }
+  
+  /* Image Section */
+  .about-me-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .about-me-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text Section */
+  .about-me-text {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .about-me-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .about-me-text p {
+    font-size: 1.1rem;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    .about-me-text h1 {
+      font-size: 2rem;
+    }
+  
+    .about-me-text p {
+      font-size: 1rem;
+    }
+  }
+  
